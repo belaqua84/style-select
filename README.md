@@ -7,6 +7,8 @@ This directive creates an invisible-but-still-clickable `<select>` element, and 
 
 Currently this directive only works with an array for your ngOptions.
 
+The arrow for the drop down is CSS3, so if you have to support older browsers use an image.
+
 ##Usage
 First, bring the script into your index page:
 

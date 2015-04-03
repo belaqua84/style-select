@@ -9,7 +9,6 @@ select {
   float: left;
   position: relative;
   width:100%;
-  min-width:80px;
 }
 
 select ~ .pretend-select {
@@ -38,7 +37,6 @@ select ~ .pretend-select {
   top: -34px;
   float: left;
   width:100%;
-  min-width: 80px;
 }
 select ~ .pretend-select.error {
   border-color: #D60024;
@@ -127,25 +125,12 @@ select:focus ~ .pretend-select {
 
 /* Replace these with your own width classes */
 
-.select-one {
+.my-width {
   width: 120px;
 }
 
-.select-two {
-  width: 100px;
-}
-
-.width-30 {
-  width: 30%;
-  min-width:120px;
-}
-
 @media (min-width: 768px) {
-  .select-one {
-    width: 120px;
-  }
-
-  .select-two {
+  .my-width {
     width: 150px;
   }
-}
+

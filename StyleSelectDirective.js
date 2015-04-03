@@ -1,5 +1,5 @@
 myApp.directive('styleSelect', [function(){
-		return {
+	return {
   			restrict: 'A',
         scope: { 
             items: '=', 
@@ -14,5 +14,5 @@ myApp.directive('styleSelect', [function(){
                 scope.labelMe = attr.labelme;  
             }
         }
-		}
+	}
 }]);

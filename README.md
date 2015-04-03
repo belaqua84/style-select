@@ -48,9 +48,9 @@ whoami will create an id of days_id, and will add a for on the label of days_id.
 
 To add a class that defines the width of the select (or some other special style for this select element only):
 
-`<div style-select items="myArray" ng-model="myModel" whoami="days" selectclass="width-30"></div>`
+`<div style-select items="myArray" ng-model="myModel" whoami="days" selectclass="my-width"></div>`
 
-The selectclass is applied to both the invisible select element and the visible div. In this example width-30 might make the select and div both 30% width.  If you don't define a specific width then they will be 100% width by default.
+The selectclass is applied to both the invisible select element and the visible div. In this example my-width might make the select and div both 100px wide.  If you don't define a specific width then they will be 100% width by default.
 
 ####Give the Label a specific value
 

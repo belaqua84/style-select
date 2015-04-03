@@ -1,0 +1,151 @@
+/* Put your css in here */
+
+select {
+  z-index: 10;
+  opacity: 0.0001;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  float: left;
+  position: relative;
+  width:100%;
+  min-width:80px;
+}
+
+select ~ .pretend-select {
+  background-color: #ebebeb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#dcdcdc));
+  /* Chrome, Safari 4+ */
+  background-image: -webkit-linear-gradient(top, #f7f7f7, #dcdcdc);
+  /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image: -moz-linear-gradient(top, #f7f7f7, #dcdcdc);
+  /* Firefox 3.6-15 */
+  background-image: -o-linear-gradient(top, #f7f7f7, #dcdcdc);
+  /* Opera 11.10-12.00 */
+  background-image: linear-gradient(to bottom, #f7f7f7, #dcdcdc);
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7f7f7", endColorstr="#dcdcdc");
+  /* IE 6-9 */
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #d0d0d0;
+  height: 34px;
+  z-index: 1;
+  position: relative;
+  top: -34px;
+  float: left;
+  width:100%;
+  min-width: 80px;
+}
+select ~ .pretend-select.error {
+  border-color: #D60024;
+}
+select ~ .pretend-select .placeholder-text {
+  display: inline;
+  height: 100%;
+  line-height: 34px;
+  padding-left: 5px;
+  float: left;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;   
+  max-width:75%;
+}
+select ~ .pretend-select .divider-line {
+  width: 0; 
+	height: 100%; 
+	border-left: 1px solid #c4c4c4;
+	float:right;
+	right:30px;
+	position:relative;
+}
+select ~ .pretend-select .dd-arrow {
+  /*CSS3 arrow - replace with image if desired*/
+  width: 0; 
+	height: 0; 
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 10px solid #f00;
+	/*End CSS3 arrow*/
+	
+  float: right;
+  margin-top:10px;
+  margin-right:5px;
+}
+
+select:hover ~ .pretend-select {
+  background-color: #f0f0f0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#e9e9e9));
+  /* Chrome, Safari 4+ */
+  background-image: -webkit-linear-gradient(top, #fbfbfb, #e9e9e9);
+  /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image: -moz-linear-gradient(top, #fbfbfb, #e9e9e9);
+  /* Firefox 3.6-15 */
+  background-image: -o-linear-gradient(top, #fbfbfb, #e9e9e9);
+  /* Opera 11.10-12.00 */
+  background-image: linear-gradient(to bottom, #fbfbfb, #e9e9e9);
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fbfbfb", endColorstr="#e9e9e9");
+  /* IE 6-9 */
+}
+
+select:focus ~ .pretend-select {
+  background-color: #f0f0f0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#e9e9e9));
+  /* Chrome, Safari 4+ */
+  background-image: -webkit-linear-gradient(top, #fbfbfb, #e9e9e9);
+  /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image: -moz-linear-gradient(top, #fbfbfb, #e9e9e9);
+  /* Firefox 3.6-15 */
+  background-image: -o-linear-gradient(top, #fbfbfb, #e9e9e9);
+  /* Opera 11.10-12.00 */
+  background-image: linear-gradient(to bottom, #fbfbfb, #e9e9e9);
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fbfbfb", endColorstr="#e9e9e9");
+  /* IE 6-9 */
+  outline: 1px dotted #D60024;
+}
+
+@media (min-width: 768px) {
+  .pretend-select .text {
+    padding-left: 5px;
+  }
+}
+
+.multi-select-holder {
+  float: left;
+  margin-right:15px;
+}
+
+.reduce-height-for-select {
+  margin-bottom: -34px; /* 34 because the height of the select is 34px */
+}
+
+
+/* Replace these with your own width classes */
+
+.select-one {
+  width: 120px;
+}
+
+.select-two {
+  width: 100px;
+}
+
+.width-30 {
+  width: 30%;
+  min-width:120px;
+}
+
+@media (min-width: 768px) {
+  .select-one {
+    width: 120px;
+  }
+
+  .select-two {
+    width: 150px;
+  }
+}

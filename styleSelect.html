@@ -1,0 +1,8 @@
+<label for="{{whoAmI + '_id'}}">{{labelMe}}</label>
+<select class="{{selectClass}}" id="{{whoAmI + '_id'}}" name="{{whoAmI + '_name'}}" ng-model="ngModel" data-ng-options="item for item in items"></select>
+<div class="clear"></div>
+<div class="pretend-select {{selectClass}}">
+	<span class="placeholder-text card-icons">{{ngModel}}</span>
+	<span class="divider-line"></span>
+  	<span class="dd-arrow"></span>
+</div>  
